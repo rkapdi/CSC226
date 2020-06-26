@@ -30,7 +30,16 @@ Kruskal's Algorithm
 Time Complexity:
   - Sorting is most expensive, total complexity of disjoint-set operations: O(ElogV)
   - O(ElogV) is the overall complexity of the alg.
-  
+
+Two ideas emerge from Kruskals Algorithm:
+- Efficient Heap Construction: Bottom Up Heap
+- Efficient Cycle Detection: Union Find Structure
+
+Efficient Heap Construction: Bottom Up Heaps:
+- Avoid sorting edge weights by storing edges in a Heap.
+- m standard insert operations: O(mlog(m)) time.
+- Possible to build a Heap w/ O(m) time.
+
 
 Why use Disjoint sets?
 
