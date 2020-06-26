@@ -1,8 +1,26 @@
 Minimum Spanning Trees
-- A MST is a subgraph of G, s.t from the starting vertex to the end vertex the path has the 
-  least cost.
+  > Spanning Tree
+    - Given an undirected weighted graph G, a ST is a subgraph of G that spans all the vertices.
+    - A Minimum Spanning Tree is a ST which has the least cost(the sum of its edges) among all STs.
+    - There can be many MSTs.
 - A tree can not have a cycle while a graph can have cycles.
 
+
+Two Properties of MSTs:
+  1. Cycle Property
+    "Let C be a cycle in a graph: G with distinct edge weights.
+     Let e be the edge in C with the most weight.
+     The MST of G does not contain e"
+     
+     Proof: [Proof by Contradiction]
+     1. Assume e exists in MST: T
+     2. If we cut the graph at e then we have T1 and T2; two subtrees.
+     3. The raminder of C will contain an edge "f" that connects T1 and T2.
+     4. If we replace e with f then we have a MST with lower cost. [Contradiction]
+     5. Therefore by contradiction, we have shown that the heaviest edge in a cycle present in a graph with distinct 
+        edge weights will not be in the MST.
+     
+  2. Cut Property
 Kruskal's Algorithm
 
 - Sort all the edges according to their weights
