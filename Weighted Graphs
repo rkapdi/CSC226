@@ -1,0 +1,24 @@
+Minimum Spanning Trees
+- A MST is a subgraph of G, s.t from the starting vertex to the end vertex the path has the 
+  least cost.
+- A tree can not have a cycle while a graph can have cycles.
+
+Kruskal's Algorithm
+
+- Sort all the edges according to their weights
+- add the lowest weighted edge to the MST until edge_largestWeight
+- Avoid cycles by using disjoint sets
+
+Time Complexity:
+  - Sorting is most expensive, total complexity of disjoint-set operations: O(ElogV)
+  - O(ElogV) is the overall complexity of the alg.
+  
+
+Why use Disjoint sets?
+
+- Since Disjoint sets are those sets that have an empty set at their 
+  intersection, using them allows us to find elements that have
+  nothing in common.
+- Why not use a DFS instead?
+  b/c DFS has a time complexity of O(V+E)
+  
